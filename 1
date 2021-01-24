@@ -4,7 +4,7 @@ using namespace std;
 class Solution{
 public:
     vector<int> twoSum(vector<int>& nums, int target){
-        // ±©Á¦Ë«Ñ­»·
+        // 暴力
         // vector<int> res(2);
         // for(int i=0;i<nums.size();i++){
         //     for(int j=i+1;j<nums.size();j++){
@@ -16,7 +16,7 @@ public:
         // }
         // return res;
 
-        // ¹þÏ£±í
+        // 哈希表
         vector<int> res(2);
         unordered_map<int, int> mp;
         for(int i=0;i<nums.size();i++){
