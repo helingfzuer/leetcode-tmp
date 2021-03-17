@@ -23,4 +23,4 @@ int main(){
     int res=solution.numDistinct(s, t);
     cout<<res<<endl;
     return 0;
-}
+} 
