@@ -20,37 +20,11 @@ ListNode *creatList(vector<int> nums){
     return head;
 }
 
-// 获取链表长度
-int getLength(ListNode *head){
-    int res=0;
-    while(head)  res++, head=head->next;
-    return res;
-}
-
-// 插入一个元素
-ListNode *addNode(ListNode *head, int value){
-    // 头插法
-    ListNode *newNode=new ListNode(value);
-    newNode->next=head;
-    return newNode;
-
-    // 尾插法
-    // ListNode *dummyHead=head, *newNode=new ListNode(value);
-    // while(dummyHead->next)  dummyHead=dummyHead->next;
-    // dummyHead->next=newNode;
-    // return head;
-}
-
 // 打印链表
 void printList(ListNode *head){
     while(head)  cout<<head->val<<" ", head=head->next;
     cout<<endl;
 }
-
-class cmp{
-public:
-    bool operator()(ListNode* a, ListNode* b){return a->val>b->val;}
-};
 
 class Solution{
 public:
